@@ -1,0 +1,1 @@
+export { EmailMobilePagination } from './EmailMobilePagination';

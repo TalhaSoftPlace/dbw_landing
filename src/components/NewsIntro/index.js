@@ -1,0 +1,1 @@
+export { NewsIntro } from './NewsIntro';

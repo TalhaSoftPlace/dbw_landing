@@ -1,0 +1,1 @@
+export { ProfileGeneralForm } from './ProfileGeneralForm';

@@ -1,0 +1,1 @@
+export { NewsManagementPage } from './NewsManagementPage';

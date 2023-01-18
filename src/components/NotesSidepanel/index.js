@@ -1,0 +1,1 @@
+export { NotesSidepanel } from './NotesSidepanel';

@@ -1,0 +1,1 @@
+export { MenuAvatar } from './MenuAvatar';

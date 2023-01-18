@@ -1,0 +1,1 @@
+export { AttendeesBox } from './AttendeesBox';

@@ -1,0 +1,1 @@
+export { WithBGIcons } from './WithBGIcons';

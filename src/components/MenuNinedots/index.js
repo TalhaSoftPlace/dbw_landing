@@ -1,0 +1,1 @@
+export { MenuNinedots } from './MenuNinedots';

@@ -1,0 +1,1 @@
+export { MeatingNotesPagination } from './MeatingNotesPagination';

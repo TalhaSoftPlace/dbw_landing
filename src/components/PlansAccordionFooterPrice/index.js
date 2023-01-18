@@ -1,0 +1,1 @@
+export { PlansAccordionFooterPrice } from './PlansAccordionFooterPrice';

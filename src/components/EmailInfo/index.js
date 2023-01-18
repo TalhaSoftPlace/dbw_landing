@@ -1,0 +1,1 @@
+export { EmailInfo } from './EmailInfo';

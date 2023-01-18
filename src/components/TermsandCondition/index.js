@@ -1,0 +1,1 @@
+export { TermsandCondition } from './TermsandCondition';

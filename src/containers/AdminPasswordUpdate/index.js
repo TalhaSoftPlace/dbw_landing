@@ -1,0 +1,1 @@
+export { AdminPasswordUpdate } from './AdminPasswordUpdate';
