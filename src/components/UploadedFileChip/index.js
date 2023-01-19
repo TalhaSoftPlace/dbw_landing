@@ -1,1 +1,0 @@
-export { UploadedFileChip } from './UploadedFileChip'

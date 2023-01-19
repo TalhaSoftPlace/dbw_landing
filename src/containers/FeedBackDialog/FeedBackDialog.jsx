@@ -10,18 +10,17 @@ import {
 } from './FeedBackDialog.styles';
 import { DialogContent, Box } from '@mui/material';
 import { useSendFeedbackMutation } from '../../mutations';
-import { useAuth } from '../../hooks';
+
 import { feedBackSchema } from './validation.schema';
 import { ConfirmationDialog } from '../../containers';
 import { useLocalization } from '../../hooks';
 export const FeedBackDialog = React.memo(({ open, handleClose }) => {
-  const { user } = useAuth();
   const { mutateAsync: sendFeedback, isSuccess } = useSendFeedbackMutation();
   const { t } = useLocalization();
   const initialValues = {
     category: 'category',
     feedbacknote: '',
-    userEmail: user?.username,
+    userEmail: '',
   };
 
   const [openDialog, setOpenDialog] = React.useState(false);
@@ -43,12 +42,12 @@ export const FeedBackDialog = React.memo(({ open, handleClose }) => {
       sendFeedback({
         category: values?.category,
         feedback: values?.feedbacknote,
-        userEmail: user?.userName,
+        userEmail: '',
       }).then(() => {
         handleOpen();
       });
     },
-    [handleOpen, sendFeedback, user?.userName]
+    [handleOpen, sendFeedback]
   );
   return (
     <DialogStyled

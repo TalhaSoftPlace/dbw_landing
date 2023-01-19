@@ -1,17 +1,14 @@
 import React, { useCallback, useMemo } from 'react';
 import { QueryClient, QueryClientProvider } from 'react-query';
-import { useSetRecoilState } from 'recoil';
 import { Router } from './Router';
 import { Theme } from './theme';
 import { useSnackbar } from 'notistack';
 import { AppStyles } from './App.styles';
 import { ReactQueryDevtools } from 'react-query/devtools';
-import { authTokenAtom } from './atoms';
 import { persistQueryClient } from 'react-query/persistQueryClient-experimental';
 import { createWebStoragePersistor } from 'react-query/createWebStoragePersistor-experimental';
 
 export const App = () => {
-  const setResetToken = useSetRecoilState(authTokenAtom);
 
   const { enqueueSnackbar } = useSnackbar();
   const onError = useCallback(
@@ -20,7 +17,6 @@ export const App = () => {
         return;
       }
       if (error?.response?.status === 401 || error?.response?.status === 403) {
-        setResetToken(state => ({ ...state, expired: true }));
         return enqueueSnackbar("Please login again.", {
           variant: 'error',
         });
@@ -35,7 +31,7 @@ export const App = () => {
         variant: 'error',
       });
     },
-    [enqueueSnackbar, setResetToken]
+    [enqueueSnackbar]
   );
 
   const queryClient = useMemo(

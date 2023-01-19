@@ -1,1 +1,2 @@
-export { PricingPlan } from './PricingPlan';
+import { PricingPlan } from './PricingPlan';
+export default PricingPlan;

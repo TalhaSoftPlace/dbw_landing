@@ -1,1 +1,0 @@
-export { ShortReply } from './ShortReply';

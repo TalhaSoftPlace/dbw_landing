@@ -1,1 +1,0 @@
-export { WorkflowDocumentsPagination } from './WorkflowDocumentsPagination';

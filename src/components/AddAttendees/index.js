@@ -1,1 +1,0 @@
-export { AddAttendees } from './AddAttendees';

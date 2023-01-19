@@ -1,1 +1,0 @@
-export { EmptyMailboxScreen } from './EmptyMailboxScreen';

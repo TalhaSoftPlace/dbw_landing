@@ -1,1 +1,0 @@
-export { PlansAccordionFooterPrice } from './PlansAccordionFooterPrice';

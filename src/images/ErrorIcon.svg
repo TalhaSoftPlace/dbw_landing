@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="69.131" height="69.131" viewBox="0 0 69.131 69.131">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#d92525"/>
+      <stop offset="0.194" stop-color="#da2824"/>
+      <stop offset="0.378" stop-color="#dd3421"/>
+      <stop offset="0.559" stop-color="#e2471d"/>
+      <stop offset="0.737" stop-color="#e96218"/>
+      <stop offset="0.912" stop-color="#f38411"/>
+      <stop offset="1" stop-color="#f9990d"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#d92525"/>
+      <stop offset="0.192" stop-color="#dd3521"/>
+      <stop offset="0.572" stop-color="#e96118"/>
+      <stop offset="1" stop-color="#f9990d"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_5396" data-name="Group 5396" transform="translate(1482.997 -472.543)">
+    <path id="Path_216040" data-name="Path 216040" d="M-1416.532,493.776c-.047-.112-.094-.222-.144-.33-.025-.062-.049-.125-.08-.186-.072-.163-.144-.328-.218-.486-.116-.262-.237-.523-.364-.778a32.685,32.685,0,0,0-15.6-15.788,40.847,40.847,0,0,0-9.664-3.17,34.4,34.4,0,0,0-5.834-.495A34.565,34.565,0,0,0-1483,507.11a34.564,34.564,0,0,0,34.564,34.564,34.565,34.565,0,0,0,34.567-34.564A34.452,34.452,0,0,0-1416.532,493.776Zm-31.935,45.808a32.278,32.278,0,0,1-32.128-32.2,32.223,32.223,0,0,1,32.193-32.112,32.236,32.236,0,0,1,32.134,32.326A32.321,32.321,0,0,1-1448.467,539.583Z" fill="url(#linear-gradient)"/>
+    <path id="Path_216041" data-name="Path 216041" d="M-1432.188,521.281l-2.078,2.06c-5.46-5.586-10.8-11.044-16.133-16.5-5.787,5.832-11.2,11.288-16.733,16.864l-2.053-2.33,16.386-16.221-16.766-16.6,2.24-2.133c5.476,5.53,10.89,11,16.523,16.69l16.4-16.768,1.834,2.2-16.467,16.237C-1443.319,510.381-1437.861,515.726-1432.188,521.281Z" transform="translate(2.397 2.462)" fill="url(#linear-gradient-2)"/>
+  </g>
+</svg>

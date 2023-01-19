@@ -1,1 +1,0 @@
-export { MeetingAttendees } from './MeetingAttendees';

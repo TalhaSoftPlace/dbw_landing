@@ -1,1 +1,0 @@
-export { EventInvitationDialog } from './EventInvitationDialog';

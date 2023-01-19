@@ -1,1 +1,0 @@
-export { BoxHeader } from './BoxHeader'

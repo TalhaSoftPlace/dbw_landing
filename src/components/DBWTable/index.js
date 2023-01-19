@@ -1,1 +1,0 @@
-export { DBWTable } from './DBWTable'

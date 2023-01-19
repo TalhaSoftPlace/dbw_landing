@@ -1,1 +1,0 @@
-export { MailBoxCheckbox } from './MailBoxCheckbox'

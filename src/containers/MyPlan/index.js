@@ -1,1 +1,0 @@
-export { MyPlan } from './MyPlan';

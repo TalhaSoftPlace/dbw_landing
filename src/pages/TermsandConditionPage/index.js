@@ -1,1 +1,2 @@
-export { TermsandConditionPage } from './TermsandConditionPage';
+import { TermsandConditionPage } from './TermsandConditionPage';
+export default TermsandConditionPage;

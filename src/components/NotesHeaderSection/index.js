@@ -1,1 +1,0 @@
-export { NotesHeaderSection } from './NotesHeaderSection';

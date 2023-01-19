@@ -1,1 +1,0 @@
-export { CalenderSidePanel } from './CalenderSidePanel';

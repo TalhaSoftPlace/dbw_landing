@@ -22,7 +22,7 @@ export const RecoveryCode = React.memo(({ values, handleChange }) => {
   }, [values.recoveryMail, showTooltip, toggleTooltip]);
 
   const handleClose = useCallback(() => {
-    window.location.replace('/sign-in');
+    window.location.replace(process.env.REACT_APP_FRONTEND_URL);
   }, []);
 
   return (

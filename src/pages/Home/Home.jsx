@@ -21,13 +21,12 @@ import {
   MeetblueIcon
 } from './Home.style';
 import { Container, Grid } from '@mui/material';
-import { useLocalization , useGuest  } from './../../hooks';
+import { useLocalization } from './../../hooks';
 import { homeNavItems } from '../../constants';
 import { cookiesApprovalAtom } from './../../atoms';
 import { useRecoilValue } from 'recoil';
 import { ChatwootWidget } from '../../components/Chatwoot/Chatwoot';
 export const Home = () => {
-  useGuest({ redirect: 'auto' });
   const { t } = useLocalization();
   const { isPopup } = useRecoilValue(cookiesApprovalAtom);
   return (

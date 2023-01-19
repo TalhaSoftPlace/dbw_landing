@@ -1,1 +1,0 @@
-export { AdminBreadcrumbs } from './AdminBreadcrumbs';

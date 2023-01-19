@@ -1,1 +1,2 @@
-export { NewsIntroPage } from './NewsIntroPage';
+import { NewsIntroPage } from './NewsIntroPage';
+export default NewsIntroPage;

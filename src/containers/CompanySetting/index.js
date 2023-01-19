@@ -1,1 +1,0 @@
-export { CompanySetting } from './CompanySetting';

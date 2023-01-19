@@ -4,11 +4,10 @@ import { HomeNavbar, CreateUserForm } from '../../containers';
 import { Background, Wrapper } from './Registration.style';
 import { FormFooter } from '../../components';
 import { WithBGIcons } from '../../components';
-import { useGuest, useWindowResize } from '../../hooks';
+import { useWindowResize } from '../../hooks';
 import { useTheme } from '@mui/material';
 
 export const Registration = () => {
-  useGuest({ redirect: '/admin' });
   const winSize = useWindowResize();
   const muiTheme = useTheme();
   return (

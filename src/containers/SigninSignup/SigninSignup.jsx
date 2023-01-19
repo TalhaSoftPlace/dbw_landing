@@ -1,11 +1,9 @@
 import React from 'react';
 import { LoginButton, SignupButton, Wrapper } from './SigninSignup.styles';
-import { Link } from 'react-router-dom';
-import { useAuth, useLocalization } from '../../hooks';
+import { useLocalization } from '../../hooks';
 import { useLocation } from 'react-router-dom';
-import { MenuAvatar, InvitationDialog } from '../../components';
+import { InvitationDialog } from '../../components';
 export const SigninSignup = React.memo(() => {
-  const { isLoggedIn } = useAuth();
 
   const { t } = useLocalization();
   const [showLogin, setShowLogin] = React.useState(true);
@@ -30,13 +28,11 @@ export const SigninSignup = React.memo(() => {
 
   return (
     <Wrapper>
-      {isLoggedIn ? (
-        <MenuAvatar />
-      ) : (
+
         <>
           {showLogin ? (
             <LoginButton>
-              <Link to="/sign-in">{t.SignInsignup.signin}</Link>
+            <a href={process.env.REACT_APP_FRONTEND_URL}>{t.SignInsignup.signin}</a>
             </LoginButton>
           ) : (
             <></>
@@ -51,8 +47,7 @@ export const SigninSignup = React.memo(() => {
           ) : (
             <></>
           )}
-        </>
-      )}
+      </>
       <InvitationDialog open={openDialog} handleClose={handleClose} />
     </Wrapper>
   );

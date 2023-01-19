@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/styles.css"],"names":[],"mappings":"AAAA,KACI,kBAEJ,CAEA,EACI,QAAS,CACT,SACJ","file":"main.883ba094.chunk.css","sourcesContent":["body {\r\n    background: #202641;\r\n\r\n}\r\n\r\n* {\r\n    margin: 0;\r\n    padding: 0;\r\n}\r\n"]}

@@ -1,5 +1,4 @@
 import React, { useCallback, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { VisibilityOff, Visibility } from '@mui/icons-material';
 // import ReCAPTCHA from 'react-google-recaptcha';
 import {
@@ -273,7 +272,7 @@ export const CreateUsernameStep = React.memo(
           </Button>
           <TypographyStyled mt={2} align="center">
             {t.createAdminForm?.alreadyHave}
-            <Link to="/sign-in">{t.createAdminForm?.signin}</Link>
+            <a href={process.env.REACT_APP_FRONTEND_URL}>{t.createAdminForm?.signin}</a>
           </TypographyStyled>
         </Fileds>
       </div>

@@ -1,1 +1,0 @@
-export { PayInvoiceDialog } from './PayInvoiceDialog';

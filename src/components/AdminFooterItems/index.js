@@ -1,1 +1,0 @@
-export { AdminFooterItems } from './AdminFooterItems';

@@ -1,1 +1,0 @@
-export { QuotaProgress } from './QuotaProgress';

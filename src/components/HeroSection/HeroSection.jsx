@@ -9,12 +9,10 @@ import { ReactComponent as WorkflowHeroIcon } from '../../images/WorkflowHeroIco
 import { ReactComponent as MeetblueHeroIcon } from '../../images/MeetblueHeroIcon.svg';
 
 import { useLocalization } from './../../hooks';
-import { useAuth } from '../../hooks';
-import { useNavigate } from 'react-router-dom';
+
 export const HeroSection = React.memo(() => {
   const [openDialog, setOpenDialog] = React.useState(false);
-  const { isLoggedIn } = useAuth();
-  const navigate = useNavigate();
+
   const hadleOpen = React.useCallback(() => {
     setOpenDialog(true);
   }, []);
@@ -22,11 +20,7 @@ export const HeroSection = React.memo(() => {
     setOpenDialog(false);
   }, []);
   const handleLogin = () => {
-    if (isLoggedIn) {
-      navigate('/workspace');
-    } else {
-      navigate('/sign-in');
-    }
+    window.location.replace(process.env.REACT_APP_FRONTEND_URL);
   }
   const { t } = useLocalization();
   return (

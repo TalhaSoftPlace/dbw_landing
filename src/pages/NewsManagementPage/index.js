@@ -1,1 +1,2 @@
-export { NewsManagementPage } from './NewsManagementPage';
+import { NewsManagementPage } from './NewsManagementPage';
+export default NewsManagementPage;

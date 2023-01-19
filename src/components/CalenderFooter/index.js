@@ -1,1 +1,0 @@
-export { CalenderFooter } from './CalenderFooter';

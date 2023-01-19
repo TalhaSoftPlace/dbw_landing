@@ -1,1 +1,0 @@
-export { DomainSettings } from './DomainSettings';

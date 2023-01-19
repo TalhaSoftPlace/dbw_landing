@@ -1,1 +1,0 @@
-export { JsxToPDF } from './JsxToPDF';
