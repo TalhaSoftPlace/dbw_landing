@@ -8,7 +8,7 @@ COPY . .
 # install node modules and build assets
 ENV REACT_APP_NODE_ENV=${DOCKER_ENV}
 RUN echo $REACT_APP_NODE_ENV
-RUN npm i gzipper -g && yarn install && yarn build:$REACT_APP_NODE_ENV
+RUN yarn install && yarn build:$REACT_APP_NODE_ENV
 
 # nginx state for serving content
 FROM nginx:alpine
