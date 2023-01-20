@@ -1,6 +1,10 @@
 import styled from '@emotion/styled';
 
 export const AppStyles = styled.div`
+ ${({ theme }) => `
+        background: ${theme.palette.background.primary};
+    `};
+    
   iframe {
     border: none;
   }
