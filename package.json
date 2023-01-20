@@ -80,7 +80,6 @@
     "test": "node scripts/test.js"
   },
   "eslintConfig": {
-    "parser": "@typescript-eslint/parser",
     "extends": [
       "react-app",
       "react-app/jest"
@@ -146,10 +145,5 @@
       "jest-watch-typeahead/testname"
     ],
     "resetMocks": true
-  },
-  "babel": {
-    "presets": [
-      "react-app"
-    ]
   }
 }
