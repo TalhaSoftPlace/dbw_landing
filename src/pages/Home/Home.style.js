@@ -7,7 +7,7 @@ import { ReactComponent as CalenderIcon } from '../../images/calendar.svg';
 import { ReactComponent as HolisticEmail } from '../../images/HolisticEmail.svg';
 import { ReactComponent as Meetblue } from '../../images/Meetblue.svg';
 import boatImage from '../../images/1920.jpg';
-import responsiveBoatImage from '../../images/640.png';
+import responsiveBoatImage from '../../images/640.jpg';
 
 export const Background = styled(Box)`
   padding-top: 5%;
