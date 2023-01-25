@@ -112,7 +112,7 @@ export const HomeNews = React.memo(() => {
             <Grid item sm={12} md={6} lg={6}>
               
             <StyledLink to="/business-email" >
-              <NewsCard imgSrc={NewsIntro} title={t.newsTitle} /> 
+              <NewsCard imgSrc={NewsIntro} title={t.newsTitle}  /> 
             </StyledLink>
             </Grid>
             <Grid item sm={12} md={6} lg={6}>

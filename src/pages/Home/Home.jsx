@@ -35,7 +35,7 @@ export const Home = () => {
         <HomeNavbar pages={homeNavItems} />
         <HeroSection />
         <Container maxWidth="lg" className="herodiv">
-          <Grid container spacing={2}>
+          <Grid  spacing={2}>
             <Grid item xs={12} sx={{ pl: '0px !important' }}>
               <Wrapper>
                 <Typography variant="h2" className="homeheading">

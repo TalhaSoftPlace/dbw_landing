@@ -5,7 +5,7 @@ import { PropTypes } from 'prop-types';
 export const NewsCard = ({ imgSrc, title, subtitle, body }) => {
   return (
     <News>
-      <img src={imgSrc} alt={title} width="100%" />
+      <img src={imgSrc} alt={title} width="100%" height="100%" />
       <div className="head">
         <Typography variant="h4">{title}</Typography>
       </div>
