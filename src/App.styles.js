@@ -39,7 +39,9 @@ export const AppStyles = styled.div`
     `};
     }
   }
-
+a{
+  text-decoration:none;
+}
   .space-between {
     justify-content: space-between;
   }

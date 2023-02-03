@@ -127,6 +127,7 @@ export const PricingBox = styled(Box)`
 export const StyledLink = styled(Link)`
   ${({ theme }) => `
   text-decoration: none;
+  color: ${theme.palette.landingpage.text.blueLight};
   `}
 `;
 export const StyledGrid = styled(Grid)`

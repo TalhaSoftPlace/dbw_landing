@@ -6,6 +6,7 @@ import {
   FooterHead,
   StyledLink,
   StyledMenu,
+  LinkStyled,
 } from '../HomeFooter/HomeFooter.styles';
 import { useLocalization } from './../../hooks';
 export const HomeFooter = React.memo(() => {
@@ -133,40 +134,40 @@ export const HomeFooter = React.memo(() => {
             </Typography>
 
             <Typography mb={1} sx={{ cursor: 'pointer' }}>
-              <a
+              <LinkStyled
                 href="https://twitter.com/DeepBlueWork"
                 target="_blank"
                 rel="noreferrer"
               >
                 {t.Twitter}
-              </a>
+              </LinkStyled>
             </Typography>
             <Typography mb={1} sx={{ cursor: 'pointer' }}>
-              <a
+              <LinkStyled
                 href="https://www.linkedin.com/company/86391718/admin/"
                 target="_blank"
                 rel="noreferrer"
               >
                 LinkedIn
-              </a>
+              </LinkStyled>
             </Typography>
             <Typography mb={1} sx={{ cursor: 'pointer' }}>
-              <a
+              <LinkStyled
                 href="https://www.instagram.com/deepbluework/"
                 target="_blank"
                 rel="noreferrer"
               >
                 {t.Instagram}
-              </a>
+              </LinkStyled>
             </Typography>
             <Typography mb={1} sx={{ cursor: 'pointer' }}>
-              <a
+              <LinkStyled
                 href="https://www.youtube.com/channel/UCij1ft21S-24hWKRVuROBLg"
                 target="_blank"
                 rel="noreferrer"
               >
                 Youtube
-              </a>
+              </LinkStyled>
             </Typography>
           </Grid>
         </Grid>
