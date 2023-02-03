@@ -272,7 +272,7 @@ export const CreateUsernameStep = React.memo(
           </Button>
           <TypographyStyled mt={2} align="center">
             {t.createAdminForm?.alreadyHave}
-            <a href={process.env.REACT_APP_FRONTEND_URL}>{t.createAdminForm?.signin}</a>
+            <a href={process.env.REACT_APP_FRONTEND_URL} alt="url">{t.createAdminForm?.signin}</a>
           </TypographyStyled>
         </Fileds>
       </div>

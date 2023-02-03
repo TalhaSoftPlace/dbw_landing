@@ -32,7 +32,7 @@ export const SigninSignup = React.memo(() => {
         <>
           {showLogin ? (
             <LoginButton>
-            <a href={process.env.REACT_APP_FRONTEND_URL}>{t.SignInsignup.signin}</a>
+            <a href={process.env.REACT_APP_FRONTEND_URL} alt="url">{t.SignInsignup.signin}</a>
             </LoginButton>
           ) : (
             <></>

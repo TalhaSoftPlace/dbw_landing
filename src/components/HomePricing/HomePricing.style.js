@@ -92,13 +92,13 @@ export const PricingBox = styled(Box)`
   .free {
     ${({ theme }) => `
   color: ${theme.palette.landingpage.background.greenbg};
-  font-size: 45px;
+  font-size: 80px;
    @media (max-width: ${theme.breakpoints.values.lg}px){
-    font-size: 26px;
+    font-size: 60px;
     padding-block:0px;
    }
    @media (max-width: ${theme.breakpoints.values.md}px){
-    font-size: 36px;
+    font-size: 60px;
     padding-block:0px;
    }
     
@@ -160,12 +160,12 @@ export const Wrapper = styled(Box)`
     }
   }
   .pricesubheading {
-    font-size: 24px;
+    font-size: 34px;
     @media (max-width: ${theme.breakpoints.values.lg}px){
-    font-size: 20px;
+    font-size: 27px;
     }
     @media (max-width: ${theme.breakpoints.values.md}px){
-    font-size: 22px;
+    font-size: 27px;
     }
   }
   .paragraph{
@@ -183,13 +183,13 @@ export const Wrapper = styled(Box)`
     color: ${theme.palette.landingpage.text.light};
     @media (max-width: ${theme.breakpoints.values.lgx}px){
       font-size: 22px !important;
-      text-align: center;
+      text-align: start;
       padding-top: 10px;
       padding-bottom: 10px;
     }
     @media (max-width: ${theme.breakpoints.values.md}px){
       font-size: 22px;
-      text-align: center;
+      text-align: start;
       padding-top: 20px;
       padding-bottom: 10px;
     }
@@ -197,16 +197,16 @@ export const Wrapper = styled(Box)`
   .seeall{
     color: ${theme.palette.landingpage.text.blueLight};
     font-size: 29px;
-    text-align: end;
+    text-align: start;
     padding-right:40px;
     @media (max-width: ${theme.breakpoints.values.lgx}px){
      font-size: 18px;
-     text-align: end;
+     text-align: start;
      padding-right:17px;
     }
     @media (max-width: ${theme.breakpoints.values.md}px){
     font-size: 22px;
-    text-align: center;
+    text-align: start;
     padding-right:0px;
     }
   }
