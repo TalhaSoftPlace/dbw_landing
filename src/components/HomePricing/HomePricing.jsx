@@ -57,13 +57,13 @@ export const HomePricing = React.memo(() => {
                   <StyleTypography className="free">
                     <b>FREE!</b>
                   </StyleTypography>
-                  <StyleTypography className="pricesubheading">
+                  {/* <StyleTypography className="pricesubheading">
                     For each additional user it’s only for
                   </StyleTypography>
                   <StyleTypography className="dollor">3$</StyleTypography>
                   <StyleTypography className="pricesubheading">
                     USER/MONTH
-                  </StyleTypography>
+                  </StyleTypography> */}
                 </Box>
                 <Button
                   variant="primary"
