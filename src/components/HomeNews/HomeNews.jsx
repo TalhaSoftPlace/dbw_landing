@@ -3,7 +3,6 @@ import React from 'react';
 import { Button } from '../../components';
 import { HomeEndUserSection } from './../../components';
 import { NewsCard, Logo } from '../../components';
-import { InvitationDialog } from '../../components';
 import {
   NewsHead,
   News,
@@ -18,16 +17,13 @@ import NewsManagement from '../../images/newsManagement.png';
 import { ReactComponent as LegalIcon } from '../../images/Legal.svg';
 import { ReactComponent as IconPrivacy } from '../../images/icon-privacy.svg';
 import { useLocalization } from './../../hooks';
+import { useNavigate } from 'react-router-dom';
 export const HomeNews = React.memo(() => {
   const { t } = useLocalization();
-
-  const [openDialog, setOpenDialog] = React.useState(false);
+  const navigate = useNavigate();
   const hadleOpen = React.useCallback(() => {
-    setOpenDialog(true);
-  }, []);
-  const handleClose = React.useCallback(() => {
-    setOpenDialog(false);
-  }, []);
+    navigate('/sign-up');
+  }, [navigate]);
   return (
     <>
       <PrivacySection>
@@ -123,8 +119,6 @@ export const HomeNews = React.memo(() => {
           </Grid>
         </div>
       </News>
-      
-      <InvitationDialog open={openDialog} handleClose={handleClose} />
     </>
   );
 });
