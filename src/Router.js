@@ -1,10 +1,5 @@
 import React, { Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { useRecoilValue } from 'recoil';
-import {
-  invitationCodeAtom,
-} from './atoms';
-
 
 const Home = lazy(() => import('./pages/Home'));
 const Registration = lazy(() => import('./pages/Registration'));
@@ -16,16 +11,11 @@ const NewsIntroPage = lazy(() => import('./pages/NewsIntroPage'));
 const NewsManagementPage = lazy(() => import('./pages/NewsManagementPage'));
 
 export const Setup = React.memo(() => {
-
-  const { invitationcode } = useRecoilValue(invitationCodeAtom);
-
-
   return (
     <Suspense>
-
       <Routes>
-        {invitationcode && <Route path="/sign-up" element={<Registration />} />}
-         <Route path="/" element={<Home />} />
+        <Route path="/sign-up" element={<Registration />} />
+        <Route path="/" element={<Home />} />
         <Route path="/pricing" element={<PricingPlan />} />
         <Route path="/privacy" element={<PrivacyPolicyPage />} />
         <Route path="/terms" element={<TermsandConditionPage />} />

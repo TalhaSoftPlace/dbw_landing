@@ -52,6 +52,7 @@ export const FooterHead = styled(Box)`
 export const StyledLink = styled(Link)`
   ${({ theme }) => `
   text-decoration: none;
+  color: ${theme.palette.landingpage.text.textLight};
   `}
 `;
 
@@ -64,4 +65,10 @@ export const StyledMenu = styled(Menu)`
     width:300px;
     height:300px;
   }
+`;
+export const LinkStyled = styled.a`
+${({ theme }) => `
+  text-decoration: none;
+  color: ${theme.palette.landingpage.text.textLight};
+  `}
 `;

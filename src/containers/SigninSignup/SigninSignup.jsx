@@ -2,20 +2,17 @@ import React from 'react';
 import { LoginButton, SignupButton, Wrapper } from './SigninSignup.styles';
 import { useLocalization } from '../../hooks';
 import { useLocation } from 'react-router-dom';
-import { InvitationDialog } from '../../components';
+import { useNavigate } from 'react-router-dom';
 export const SigninSignup = React.memo(() => {
 
   const { t } = useLocalization();
+  const navigate = useNavigate();
   const [showLogin, setShowLogin] = React.useState(true);
   const [showSignUp, setShowSignUp] = React.useState(true);
   const location = useLocation();
-  const [openDialog, setOpenDialog] = React.useState(false);
   const hadleOpen = React.useCallback(() => {
-    setOpenDialog(true);
-  }, []);
-  const handleClose = React.useCallback(() => {
-    setOpenDialog(false);
-  }, []);
+    navigate('/sign-up');
+  }, [navigate]);
 
   React.useEffect(() => {
     if (location.pathname.includes('sign-up')) {
@@ -28,7 +25,6 @@ export const SigninSignup = React.memo(() => {
 
   return (
     <Wrapper>
-
         <>
           {showLogin ? (
             <LoginButton>
@@ -48,7 +44,6 @@ export const SigninSignup = React.memo(() => {
             <></>
           )}
       </>
-      <InvitationDialog open={openDialog} handleClose={handleClose} />
     </Wrapper>
   );
 });
