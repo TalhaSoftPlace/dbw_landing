@@ -116,7 +116,7 @@ export const HomePricing = React.memo(() => {
                     <Box>
                       <PricingCheck />
                     </Box>
-                    <StyledTypography>Meeting notes</StyledTypography>
+                    <StyledTypography>MeetBlue virtual meeting platform</StyledTypography>
                   </Box>
                 </Grid>
                 <Grid item lg={6} md={6} className="colum2">
@@ -153,6 +153,12 @@ export const HomePricing = React.memo(() => {
                       <PricingCheck />
                     </Box>
                     <StyledTypography>Company Settings</StyledTypography>
+                  </Box>
+                  <Box sx={{ display: 'flex' }}>
+                    <Box>
+                      <PricingCheck />
+                    </Box>
+                    <StyledTypography>Meeting notes</StyledTypography>
                   </Box>
                 </Grid>
               </Grid>

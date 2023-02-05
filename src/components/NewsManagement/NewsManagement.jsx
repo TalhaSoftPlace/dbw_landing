@@ -5,7 +5,7 @@ import {
   EmailBox,
   HeroWrapper,
 } from './NewsManagement.styles';
-import  newsManagementimage  from '../../images/newsManagementbanner.svg';
+import  newsManagementimage  from '../../images/newsManagementbanner.png';
 
 export const NewsManagement = React.memo(() => {
   return (
