@@ -4,8 +4,10 @@ import { Link } from 'react-router-dom';
 export const StyledLink = styled(Link)`
   ${({ theme }) => `
   text-decoration: none;
+  color: ${theme.palette.text.blueLight};
   `}
 `;
+
 export const Footer = styled(Box)`
   align-items: center;
   display: flex;
