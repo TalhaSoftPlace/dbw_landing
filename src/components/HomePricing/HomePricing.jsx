@@ -11,15 +11,14 @@ import {
   StyleTypography,
   StyledLink
 } from './HomePricing.style';
-import { InvitationDialog } from '../../components';
+import { useNavigate } from 'react-router-dom';
 export const HomePricing = React.memo(() => {
-  const [openDialog, setOpenDialog] = React.useState(false);
+
+  const navigate = useNavigate();
   const hadleOpen = React.useCallback(() => {
-    setOpenDialog(true);
-  }, []);
-  const handleClose = React.useCallback(() => {
-    setOpenDialog(false);
-  }, []);
+    navigate('/sign-up');
+  }, [navigate]);
+
   return (
     <Box id="pricing">
       <EmailAccount>
@@ -185,7 +184,6 @@ export const HomePricing = React.memo(() => {
           </Grid>
         </PricingBox>
       </Wrapper>
-      <InvitationDialog open={openDialog} handleClose={handleClose} />
     </Box>
   );
 });

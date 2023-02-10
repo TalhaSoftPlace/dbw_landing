@@ -25,7 +25,7 @@ export const HeroSection = React.memo(() => {
         <Grid container spacing={2}>
           <Grid item md={5} lg={5} sm={12} xs={12} mt={6}>
             <Wrapper>
-              <Typography variant="h2">
+              <Typography variant="h1">
                 {t.heroHeading1} <br /> {t.heroHeading2}{' '}
               </Typography>
               <Typography mt={4} variant="h2">
