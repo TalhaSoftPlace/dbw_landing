@@ -44,6 +44,18 @@ export const Wrapper = styled.div`
     color: ${theme.palette.landingpage.text.light};
   `}
   }
+
+  h1 {
+    font-size: 40px;
+    ${({ theme }) => `
+    color: ${theme.palette.landingpage.text.light};
+    `}
+    font-weight: 400;
+  }
+  h1:first-of-type {
+    font-weight: 500;
+  }
+
   h2 {
     ${({ theme }) => `
     color: ${theme.palette.landingpage.text.light};
@@ -53,6 +65,7 @@ export const Wrapper = styled.div`
   h2:first-of-type {
     font-weight: 500;
   }
+
 
   h4 {
     font-weight: 300;
