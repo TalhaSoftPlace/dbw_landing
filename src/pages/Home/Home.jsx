@@ -38,7 +38,7 @@ export const Home = () => {
           <Grid  spacing={2}>
             <Grid item xs={12} sx={{ pl: '0px !important' }}>
               <Wrapper>
-                <Typography variant="h2" className="homeheading">
+                <Typography variant="h1" className="homeheading">
                   {t.homeHeading}
                 </Typography>
                 <Typography variant="h4" sx={{ color: '#9a9ea5 !important' }}>

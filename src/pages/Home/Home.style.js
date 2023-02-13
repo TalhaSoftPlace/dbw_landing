@@ -178,6 +178,14 @@ export const WhyUsIntro = styled(Box)`
 
 export const Wrapper = styled.div`
 padding-left:0px;
+h1 {
+  font-size:40px !important;
+  ${({ theme }) => `
+  color: ${theme.palette.landingpage.text.light};
+  font-weight: 400;
+  text-align: center;
+`}
+}
   h2 {
     ${({ theme }) => `
     color: ${theme.palette.landingpage.text.light};
