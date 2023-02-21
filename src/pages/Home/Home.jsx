@@ -25,7 +25,6 @@ import { useLocalization } from './../../hooks';
 import { homeNavItems } from '../../constants';
 import { cookiesApprovalAtom } from './../../atoms';
 import { useRecoilValue } from 'recoil';
-import { ChatwootWidget } from '../../components/Chatwoot/Chatwoot';
 export const Home = () => {
   const { t } = useLocalization();
   const { isPopup } = useRecoilValue(cookiesApprovalAtom);
@@ -117,7 +116,6 @@ export const Home = () => {
         <HomeNews />
         <HomeAdressSection />
         <HomeFooter />
-        <ChatwootWidget />
       </Background>
       {isPopup && <CookiesPopup />}
     </>
