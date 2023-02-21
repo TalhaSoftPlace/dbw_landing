@@ -8,6 +8,7 @@ import {
   StyledMenu,
   LinkStyled,
 } from '../HomeFooter/HomeFooter.styles';
+// import { ChatwootWidget } from '../../components/Chatwoot/Chatwoot';
 import { useLocalization } from './../../hooks';
 export const HomeFooter = React.memo(() => {
   const { t } = useLocalization();
@@ -177,6 +178,7 @@ export const HomeFooter = React.memo(() => {
           </Grid>
         </Grid>
       </Footer>
+      {/* <ChatwootWidget /> */}
     </>
   );
 });

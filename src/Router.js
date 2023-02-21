@@ -1,6 +1,6 @@
 import React, { Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-
+import { ChatwootWidget } from './components/Chatwoot/Chatwoot';
 const Home = lazy(() => import('./pages/Home'));
 const Registration = lazy(() => import('./pages/Registration'));
 const PricingPlan = lazy(() => import('./pages/PricingPlan'));
@@ -9,6 +9,7 @@ const TermsandConditionPage = lazy(() => import('./pages/TermsandConditionPage')
 const Feedback = lazy(() => import('./pages/Feedback'));
 const NewsIntroPage = lazy(() => import('./pages/NewsIntroPage'));
 const NewsManagementPage = lazy(() => import('./pages/NewsManagementPage'));
+
 
 export const Setup = React.memo(() => {
   return (
@@ -28,10 +29,10 @@ export const Setup = React.memo(() => {
   );
 });
 export const Router = React.memo(() => {
-
   return (
     <BrowserRouter>
       <Setup />
+      <ChatwootWidget />
     </BrowserRouter>
   );
 });
