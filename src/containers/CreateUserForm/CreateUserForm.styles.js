@@ -136,6 +136,7 @@ export const Fileds = styled(Box)`
   }
 `;
 
+
 export const FormFooter = styled.div`
   width: calc(100% + 60px);
   ${({ theme }) => `
@@ -169,4 +170,10 @@ export const  StyledLink = styled(Link)`
 ${({ theme }) => `
      color:${theme.palette.text.blueLight};
      `}
+`;
+
+export const Copycode = styled(Box)`
+${({ theme }) => `
+     color: ${theme.palette.text.grey};
+  `}
 `;

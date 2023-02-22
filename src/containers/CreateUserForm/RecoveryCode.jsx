@@ -3,6 +3,7 @@ import {
   Fileds,
   HeadingWrapper,
   StyledTextField,
+  Copycode,
 } from './CreateUserForm.styles';
 import { Button } from '../../components';
 import { Box, Tooltip } from '@mui/material';
@@ -43,8 +44,10 @@ export const RecoveryCode = React.memo(({ values, handleChange }) => {
             onChange={handleChange}
             variant="outlined"
           />
+          <Box>
+            <Copycode className="copyCode" sx={{position:'absolute', top:'53px', right:'50px'}} >copy code</Copycode>
           <Tooltip open={showTooltip} title={'Copied to clipboard!'}>
-            <ContentCopyIcon
+           <ContentCopyIcon
               onClick={handleCopy}
               sx={{
                 position: 'absolute',
@@ -55,6 +58,7 @@ export const RecoveryCode = React.memo(({ values, handleChange }) => {
               }}
             />
           </Tooltip>
+          </Box>
         </Fileds>
       </Box>
       <Box sx={{ display: 'flex', justifyContent: 'center', pt: 4 }}>
