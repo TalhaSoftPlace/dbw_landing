@@ -110,6 +110,19 @@ export const CreateUsernameStep = React.memo(
       // });
     }, [setFieldValue]);
 
+    const handleKeyDown = React.useCallback(
+      event => {
+        switch (event.key) {
+          case ' ': {
+            event.preventDefault();
+            event.stopPropagation();
+            break;
+          }
+          default:
+        }
+      },
+      []
+    );
     return (
       <div onKeyDown={handleKeyPress}>
         <HeadingWrapper>
@@ -128,6 +141,7 @@ export const CreateUsernameStep = React.memo(
             onBlur={handleBlur}
             value={values?.username}
             onChange={handleChange}
+            onKeyDown={handleKeyDown}
             autoComplete="new-password"
             inputProps={{
               autoComplete: 'new-password',
