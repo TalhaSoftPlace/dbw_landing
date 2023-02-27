@@ -45,7 +45,7 @@ export const RecoveryCode = React.memo(({ values, handleChange }) => {
             variant="outlined"
           />
           <Box>
-            <Copycode className="copyCode" sx={{position:'absolute', top:'53px', right:'50px'}} >copy code</Copycode>
+            <Copycode className="copyCode" sx={{position:'absolute', top:'53px', right:'40px'}} >Copy code</Copycode>
           <Tooltip open={showTooltip} title={'Copied to clipboard!'}>
            <ContentCopyIcon
               onClick={handleCopy}
